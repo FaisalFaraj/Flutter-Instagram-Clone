@@ -1,0 +1,65 @@
+{
+  "@@locale": "en",
+  "pageHomeTitle": "مرحباً {firstName}",
+  "@pageHomeTitle": {
+    "description": "هذا فقط مجرد مثال لشرح قدرة الترجمة على وضع نصوصو بديلة ",
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+ 
+  "post_your_story": "Post Your Story",
+  "edit_profile": "Edit Profile",
+  "new_post_screen": "New Post Screen",
+  "notifications_screen": "Notifications Screen",
+  "soon": "Soon",
+  "posts": "Posts",
+  "followers": "Followers",
+  "following": "Following",
+  "follow": "Follow",
+  "message": "Message",
+  "reels_screen": "Reels Screen",
+  "search": "Search",
+  "send_message": "Send Message",
+  "comments": "Comments",
+  "liked_by": "Liked By",
+  "and": "And",
+  "others": "Others",
+  "view_all":"View All",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "home": "Home",
+  "dark_mode": "Dark Mode",
+  "language": "Language",
+  "chose_language": "Chose Language",
+  "notification": "Notifications",
+  "about_app": "About",
+  "settings": "Settings",
+  "favorites": "Favorites",
+  "profile": "Profile",
+  "user": "User",
+  "version": "Version",
+  "about_developers": "About Developers",
+
+
+  "empty_list": "Empty list",
+  "exception_indicator_try_again": "Try again",
+  "generic_error_indicator_error_while_fetching_data": "An error occurred while fetching data",
+  "not_internet_connection": "An error occurred while connecting to the Internet Please check the connection",
+  "no_connection_indicator_no_connection": "No connection",
+  "no_connection_indicator_try_again_later": "Please try again later",
+  "not_authorized_indicator_you_need_to_login_to_see_this_page": "To be able to see the contents of this page, you must be logged in",
+  "not_authorized_indicator_login_register": "Register/Login"
+  
+}

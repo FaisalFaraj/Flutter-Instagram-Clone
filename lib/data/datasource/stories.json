@@ -1,0 +1,212 @@
+[
+  {
+    "story_by": {
+      "id": 1,
+      "username": "Jhon",
+      "profile_image": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    "stories": [
+      {
+        "id": 1,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1666291955915-94a510001fae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 2,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1577017452719-6513f6300a76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 3,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1578852612716-854e527abf2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 2,
+      "username": "_savannah",
+      "profile_image": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    "stories": [
+      {
+        "id": 1,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 2,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 3,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 4,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1543872084-c7bd3822856f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 5,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 6,
+        "story_type": "image",
+        "story_media": "https://plus.unsplash.com/premium_photo-1664360971127-4afa228e90aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 7,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 3,
+      "username": "_evans93",
+      "profile_image": "https://randomuser.me/api/portraits/women/71.jpg"
+    },
+    "stories": [
+      {
+        "id": 8,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1502230831726-fe5549140034?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 4,
+      "username": "justin_olson",
+      "profile_image": "https://randomuser.me/api/portraits/men/72.jpg"
+    },
+    "stories": [
+      {
+        "id": 9,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1504177151729-0e0600389766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 10,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1505079403222-b5bbf1484f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 5,
+      "username": "itsstanley",
+      "profile_image": "https://randomuser.me/api/portraits/men/31.jpg"
+    },
+    "stories": [
+      {
+        "id": 11,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1662581871665-f299ba8ace07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 6,
+      "username": "the_henry",
+      "profile_image": "https://randomuser.me/api/portraits/men/60.jpg"
+    },
+    "stories": [
+      {
+        "id": 12,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1661961112134-fbce0fdf3d99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 7,
+      "username": "alvarez",
+      "profile_image": "https://randomuser.me/api/portraits/women/45.jpg"
+    },
+    "stories": [
+      {
+        "id": 13,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1515075978617-32d63eb43bd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 8,
+      "username": "tyler_anderson",
+      "profile_image": "https://randomuser.me/api/portraits/men/57.jpg"
+    },
+    "stories": [
+      {
+        "id": 14,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1444491741275-3747c53c99b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      },
+      {
+        "id": 15,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1533561052604-c3beb6d55b8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 9,
+      "username": "sniper007",
+      "profile_image": "https://randomuser.me/api/portraits/men/46.jpg"
+    },
+    "stories": [
+      {
+        "id": 16,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      }
+    ]
+  },
+  {
+    "story_by": {
+      "id": 10,
+      "username": "alexa_",
+      "profile_image": "https://randomuser.me/api/portraits/women/11.jpg"
+    },
+    "stories": [
+      {
+        "id": 17,
+        "story_type": "image",
+        "story_media": "https://images.unsplash.com/photo-1666479246191-4c536e8d460e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "story_time": "3h"
+      }
+    ]
+  }
+]
