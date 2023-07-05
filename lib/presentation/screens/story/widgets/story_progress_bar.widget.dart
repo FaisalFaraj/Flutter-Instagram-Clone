@@ -6,6 +6,7 @@ import 'package:flutter_instagram_clone/data/models/story/user_story.model.dart'
 import 'package:flutter_instagram_clone/presentation/screens/story/story.screen.dart';
 import 'package:flutter_instagram_clone/presentation/screens/story/stories.viewmodel.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 class StoryProgressBarWidget extends StatefulWidget {
   final UserStoryModel userStoryModel;
@@ -34,7 +35,7 @@ class _StoryProgressBarWidgetState extends State<StoryProgressBarWidget> {
       children: stories.map((e) {
         return Expanded(
           child: Padding(
-            padding: const EdgeInsets.only(left: 4),
+            padding: EdgeInsets.only(left: 4.w),
             child: Consumer<StoriesViewModel>(builder: (context, provider, _) {
               return SingleProgressBar(
                 isActiveStory: activeStoryIndex == storyListIndex(e),

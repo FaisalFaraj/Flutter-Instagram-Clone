@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/user/user.model.dart';
 import 'package:flutter_instagram_clone/presentation/screens/profile/profile_statistic.widget.dart';
 import 'package:flutter_instagram_clone/presentation/widgets/user/user_avatar.widget.dart';
+import 'package:screentasia/screentasia.dart';
 
 import '../../../core/intl/app_localizations.dart';
 
@@ -15,7 +16,7 @@ class ProfileHeaderWidget extends StatelessWidget {
     ThemeData currentTheme = Theme.of(context);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
+      padding: EdgeInsets.symmetric(horizontal: 15.w),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -25,8 +26,8 @@ class ProfileHeaderWidget extends StatelessWidget {
             width: 80,
             height: 80,
           ),
-          const SizedBox(
-            width: 60,
+          SizedBox(
+            width: 60.w,
           ),
           // Statistics
           Expanded(

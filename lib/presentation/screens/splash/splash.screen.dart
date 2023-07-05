@@ -5,6 +5,7 @@ import 'package:flutter_instagram_clone/presentation/screens/story/stories.viewm
 import 'package:flutter_instagram_clone/presentation/viewmodel/user.viewmodel.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -48,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: FaIcon(
           FontAwesomeIcons.instagram,
-          size: 100,
+          size: 100.sp,
           color: currentTheme.colorScheme.onPrimary,
         ),
       ),

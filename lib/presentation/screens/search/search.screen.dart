@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/presentation/screens/feed/posts.viewmodel.dart';
 import 'package:flutter_instagram_clone/presentation/widgets/posts/posts_grid.widget.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 import '../../../core/intl/app_localizations.dart';
 
@@ -29,36 +30,36 @@ class SearchWidget extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                height: 35,
+                height: 35.h,
                 margin: const EdgeInsets.symmetric(
                   horizontal: 15,
                   vertical: 5,
                 ),
                 decoration: BoxDecoration(
                   color: currentTheme.colorScheme.secondary,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(5).r,
                 ),
                 child: TextField(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.zero,
                     border: InputBorder.none,
-                    prefixIcon: const Icon(
+                    prefixIcon: Icon(
                       Icons.search,
                       color: Colors.grey,
-                      size: 18,
+                      size: 18.sp,
                     ),
                     fillColor: Colors.white,
                     hintText: AppLocalizations.of(context)!.search,
-                    hintStyle: const TextStyle(
+                    hintStyle: TextStyle(
                       color: Colors.grey,
-                      fontSize: 12,
+                      fontSize: 12.sp,
                     ),
                     focusColor: currentTheme.colorScheme.onPrimary,
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 10,
+              SizedBox(
+                height: 10.h,
               ),
               Consumer<PostsViewModel>(
                 builder: (context, provider, _) {

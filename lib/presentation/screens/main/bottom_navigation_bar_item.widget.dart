@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:screentasia/screentasia.dart';
 
 class BottomNavigationBarItemWidget extends StatelessWidget {
   final VoidCallback onTap;
@@ -18,7 +19,7 @@ class BottomNavigationBarItemWidget extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+        padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 25.h),
         child: isActive
             ? Container(child: activeIcon)
             : Container(child: unActiveIcon),

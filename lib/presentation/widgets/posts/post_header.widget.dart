@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/user/user.model.dart';
 import 'package:flutter_instagram_clone/presentation/screens/profile/profile.screen.dart';
 import 'package:flutter_instagram_clone/presentation/widgets/user/user_avatar.widget.dart';
+import 'package:screentasia/screentasia.dart';
 
 class PostHeaderWidget extends StatelessWidget {
   final UserModel addBy;
@@ -14,19 +15,21 @@ class PostHeaderWidget extends StatelessWidget {
     ThemeData currentTheme = Theme.of(context);
 
     return Container(
-      padding: const EdgeInsetsDirectional.only(start: 20, end: 20, top: 5),
+      padding: EdgeInsetsDirectional.only(start: 20.w, end: 20.w, top: 5.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
               UserAvatarWidget(
-                width: 45,
-                height: 45,
+                width: 35.h.ap(
+                    adaptivePercentage:
+                        AdaptivePercentage(desktop: 300, tablet: 200)),
+                height: 45.w,
                 userModel: addBy,
               ),
-              const SizedBox(
-                width: 10,
+              SizedBox(
+                width: 10.w,
               ),
               GestureDetector(
                 onTap: () {
@@ -47,7 +50,7 @@ class PostHeaderWidget extends StatelessWidget {
                       addBy.username,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 14,
+                        fontSize: 14.sp,
                         color: currentTheme.colorScheme.onSecondary,
                       ),
                     ),
@@ -55,17 +58,17 @@ class PostHeaderWidget extends StatelessWidget {
                       RichText(
                         text: TextSpan(
                           children: [
-                            const WidgetSpan(
+                            WidgetSpan(
                               child: Icon(
                                 Icons.location_on_outlined,
-                                size: 14,
+                                size: 14.sp,
                                 color: Colors.grey,
                               ),
                             ),
                             TextSpan(
                               text: postLocation!,
-                              style:
-                                  const TextStyle(fontSize: 12, color: Colors.grey),
+                              style: TextStyle(
+                                  fontSize: 12.sp, color: Colors.grey),
                             ),
                           ],
                         ),
@@ -80,15 +83,15 @@ class PostHeaderWidget extends StatelessWidget {
             children: [
               Icon(
                 Icons.send_outlined,
-                size: 25,
+                size: 25.sp,
                 color: currentTheme.colorScheme.onSecondary,
               ),
-              const SizedBox(
-                width: 5,
+              SizedBox(
+                width: 5.w,
               ),
               Icon(
                 Icons.bookmark_outline_outlined,
-                size: 25,
+                size: 25.sp,
                 color: currentTheme.colorScheme.onSecondary,
               )
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:screentasia/screentasia.dart';
 
 class PostActionsWidget extends StatefulWidget {
   const PostActionsWidget({super.key});
@@ -21,27 +22,27 @@ class _PostActionsWidgetState extends State<PostActionsWidget> {
               GestureDetector(
                 onTap: () {},
                 child: SizedBox(
-                  width: 22,
+                  width: 22.w,
                   child: FaIcon(FontAwesomeIcons.heart),
                 ),
               ),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 20.w,
               ),
               GestureDetector(
                 onTap: () {},
                 child: SizedBox(
-                  width: 20,
+                  width: 20.w,
                   child: FaIcon(FontAwesomeIcons.comment),
                 ),
               ),
-              const SizedBox(
-                width: 20,
+              SizedBox(
+                width: 20.w,
               ),
               GestureDetector(
                 onTap: () {},
                 child: SizedBox(
-                  width: 20,
+                  width: 20.w,
                   child: FaIcon(FontAwesomeIcons.paperPlane),
                 ),
               ),
@@ -51,8 +52,8 @@ class _PostActionsWidgetState extends State<PostActionsWidget> {
             onTap: () {},
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-              width: 20,
-              child: FaIcon(FontAwesomeIcons.save),
+              width: 20.w,
+              child: const FaIcon(FontAwesomeIcons.save),
             ),
           )
         ],

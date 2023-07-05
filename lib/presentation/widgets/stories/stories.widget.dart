@@ -3,6 +3,7 @@ import 'package:flutter_instagram_clone/presentation/widgets/loading.widget.dart
 import 'package:flutter_instagram_clone/presentation/widgets/stories/avatar_story_widget.dart';
 import 'package:flutter_instagram_clone/presentation/screens/story/stories.viewmodel.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 import 'add_story_widget.dart';
 
@@ -25,8 +26,8 @@ class _StoriesWidgetState extends State<StoriesWidget> {
     ThemeData currentTheme = Theme.of(context);
 
     return Container(
-      padding: const EdgeInsets.only(left: 10),
-      height: 130,
+      padding: EdgeInsets.only(left: 10.w),
+      height: 130.h,
       child: Consumer<StoriesViewModel>(
         builder: (context, provider, _) {
           if (provider.isLoading) {
@@ -47,8 +48,8 @@ class _StoriesWidgetState extends State<StoriesWidget> {
               return AvatarStoryWidget(userStoryModel: userStory);
             },
             separatorBuilder: (BuildContext context, int index) {
-              return const SizedBox(
-                width: 10,
+              return SizedBox(
+                width: 10.w,
               );
             },
           );

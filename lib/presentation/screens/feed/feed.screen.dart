@@ -5,6 +5,7 @@ import 'package:flutter_instagram_clone/presentation/widgets/posts/post.widget.d
 import 'package:flutter_instagram_clone/presentation/widgets/stories/stories.widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 import '../search/search.screen.dart';
 
@@ -22,8 +23,8 @@ class FeedScreen extends StatelessWidget {
         title: IconButton(
           onPressed: () {},
           icon: SizedBox(
-            width: 30,
-            height: 30,
+            width: 3.w,
+            height: 30.h,
             child: FaIcon(
               FontAwesomeIcons.instagram,
               color: currentTheme.colorScheme.onPrimary,
@@ -39,7 +40,7 @@ class FeedScreen extends StatelessWidget {
                       builder: (context) => const SearchWidget()));
             },
             icon: SizedBox(
-              width: 20,
+              width: 20.w,
               child: FaIcon(
                 FontAwesomeIcons.search,
                 color: currentTheme.colorScheme.onPrimary,
@@ -49,7 +50,7 @@ class FeedScreen extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: SizedBox(
-              width: 20,
+              width: 20.w,
               child: FaIcon(
                 FontAwesomeIcons.facebookMessenger,
                 color: currentTheme.colorScheme.onPrimary,
@@ -62,12 +63,12 @@ class FeedScreen extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            const SizedBox(
-              height: 5,
+            SizedBox(
+              height: 5.h,
             ),
             const StoriesWidget(),
-            const SizedBox(
-              height: 5,
+            SizedBox(
+              height: 5.h,
             ),
             Consumer<PostsViewModel>(
               builder: (context, provider, _) {
@@ -83,8 +84,8 @@ class FeedScreen extends StatelessWidget {
                   },
                   itemCount: provider.postsList.length,
                   separatorBuilder: (BuildContext context, int index) {
-                    return const SizedBox(
-                      height: 10,
+                    return SizedBox(
+                      height: 10.h,
                     );
                   },
                 );

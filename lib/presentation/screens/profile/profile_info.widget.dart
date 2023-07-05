@@ -1,6 +1,7 @@
 // profile widget = name, bio and link
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/user/user.model.dart';
+import 'package:screentasia/screentasia.dart';
 
 class ProfileInfoWidget extends StatelessWidget {
   final UserModel userModel;
@@ -11,7 +12,7 @@ class ProfileInfoWidget extends StatelessWidget {
     ThemeData currentTheme = Theme.of(context);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
+      padding: EdgeInsets.symmetric(horizontal: 15.w),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,22 +24,22 @@ class ProfileInfoWidget extends StatelessWidget {
                   fontSize: 14,
                   color: currentTheme.colorScheme.onPrimary)),
           // bio
-          const SizedBox(
-            height: 5,
+          SizedBox(
+            height: 5.h,
           ),
           Text(
             userModel.bio ?? '',
             style: TextStyle(
                 fontSize: 12, color: currentTheme.colorScheme.onPrimary),
           ),
-          const SizedBox(
-            height: 5,
+          SizedBox(
+            height: 5.h,
           ),
           // link
           Text(
             userModel.link ?? '',
-            style: const TextStyle(
-                fontSize: 12, color: Color.fromARGB(255, 0, 72, 130)),
+            style:
+                TextStyle(fontSize: 12, color: Color.fromARGB(255, 0, 72, 130)),
           ),
         ],
       ),

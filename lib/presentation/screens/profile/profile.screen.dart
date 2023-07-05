@@ -8,6 +8,7 @@ import 'package:flutter_instagram_clone/presentation/screens/profile/profile_inf
 import 'package:flutter_instagram_clone/presentation/viewmodel/user.viewmodel.dart';
 import 'package:flutter_instagram_clone/presentation/widgets/posts/posts_grid.widget.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 class ProfileScreen extends StatefulWidget {
   final UserModel userModel;
@@ -37,7 +38,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           GestureDetector(
             child: Container(
-              margin: const EdgeInsets.only(right: 15),
+              margin: EdgeInsets.only(right: 15.w),
               child: Icon(
                 Icons.more_vert,
                 color: currentTheme.colorScheme.onPrimary,
@@ -55,23 +56,25 @@ class _ProfileScreenState extends State<ProfileScreen> {
             // Avatar and Statistics
             ProfileHeaderWidget(userModel: widget.userModel),
             // Name and bio and link
-            const SizedBox(
-              height: 10,
+            SizedBox(
+              height: 10.h,
             ),
             ProfileInfoWidget(userModel: widget.userModel),
             // edit profile or follow and message
-            const SizedBox(
-              height: 10,
+            SizedBox(
+              height: 10.h,
             ),
             Consumer<UsersViewModel>(builder: (context, provider, _) {
-              return ProfileActionsWidget(
-                isLoggedUser:
-                    widget.userModel.id == provider.usersList.first.id,
+              return Center(
+                child: ProfileActionsWidget(
+                  isLoggedUser:
+                      widget.userModel.id == provider.usersList.first.id,
+                ),
               );
             }),
             // media grid
-            const SizedBox(
-              height: 10,
+            SizedBox(
+              height: 10.h,
             ),
             Consumer<PostsViewModel>(
               builder: (context, postsViewModel, _) {

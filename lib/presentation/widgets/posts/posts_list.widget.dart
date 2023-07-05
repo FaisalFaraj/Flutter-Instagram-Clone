@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/post/post.model.dart';
 import 'package:flutter_instagram_clone/presentation/widgets/posts/post.widget.dart';
+import 'package:screentasia/screentasia.dart';
 
 class PostsListWidget extends StatelessWidget {
   final List<PostModel> posts;
@@ -16,8 +17,8 @@ class PostsListWidget extends StatelessWidget {
       },
       itemCount: posts.length,
       separatorBuilder: (BuildContext context, int index) {
-        return const SizedBox(
-          height: 10,
+        return SizedBox(
+          height: 10.h,
         );
       },
     );

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/story/user_story.model.dart';
 import 'package:flutter_instagram_clone/presentation/screens/story/story.screen.dart';
 import 'package:flutter_instagram_clone/presentation/widgets/user/user_avatar.widget.dart';
+import 'package:screentasia/screentasia.dart';
 
 class AvatarStoryWidget extends StatelessWidget {
   final UserStoryModel userStoryModel;
@@ -57,7 +58,7 @@ class AvatarStoryWidget extends StatelessWidget {
                 Text(
                   userStoryModel.createdBy.username,
                   maxLines: 1,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 12,
                   ),
                 ),

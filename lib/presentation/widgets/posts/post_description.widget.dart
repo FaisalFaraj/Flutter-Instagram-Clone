@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/user/user.model.dart';
+import 'package:screentasia/screentasia.dart';
 
 class PostDescriptionWidget extends StatelessWidget {
   final String description;
@@ -11,12 +12,12 @@ class PostDescriptionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+      padding: EdgeInsets.symmetric(horizontal: 20.w),
       child: RichText(
         text: TextSpan(
-          style: const TextStyle(
+          style: TextStyle(
             color: Colors.grey,
-            fontSize: 15,
+            fontSize: 15.sp,
           ),
           children: [
             // username

@@ -7,6 +7,7 @@ import 'package:flutter_instagram_clone/presentation/widgets/posts/post_header.w
 import 'package:flutter_instagram_clone/presentation/widgets/posts/post_content.widget.dart';
 import 'package:flutter_instagram_clone/presentation/widgets/posts/post_likes.widget.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 class PostWidget extends StatelessWidget {
   final PostModel postModel;
@@ -20,9 +21,9 @@ class PostWidget extends StatelessWidget {
 
     return Container(
       color: currentTheme.colorScheme.primary,
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20).r,
         child: Container(
           color: currentTheme.colorScheme.secondary,
           child: Column(
@@ -35,14 +36,14 @@ class PostWidget extends StatelessWidget {
                 addBy: user,
                 postLocation: postModel.location,
               ),
-              const SizedBox(
-                height: 10,
+              SizedBox(
+                height: 10.h,
               ),
               // content
               PostContentWidget(media: postModel.media),
 
-              const SizedBox(
-                height: 5,
+              SizedBox(
+                height: 5.w,
               ),
 
               // // actions

@@ -5,6 +5,7 @@ import 'package:flutter_instagram_clone/data/models/user/user.model.dart';
 import 'package:flutter_instagram_clone/presentation/screens/story/story.screen.dart';
 import 'package:flutter_instagram_clone/presentation/screens/story/stories.viewmodel.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 class UserAvatarWidget extends StatelessWidget {
   final UserModel userModel;
@@ -44,7 +45,7 @@ class UserAvatarWidget extends StatelessWidget {
               Container(
                 width: width,
                 height: height,
-                padding: const EdgeInsets.all(2),
+                padding: const EdgeInsets.all(1.3).r,
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
                     begin: Alignment.topRight,

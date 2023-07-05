@@ -8,6 +8,7 @@ import 'package:flutter_instagram_clone/presentation/viewmodel/user.viewmodel.da
 import 'package:flutter_instagram_clone/presentation/screens/story/stories.viewmodel.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:screentasia/screentasia.dart';
 
 import 'core/intl/app_localizations.dart';
 import 'presentation/shared/themes.dart';
@@ -28,19 +29,21 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => PostsViewModel()),
         ChangeNotifierProvider(create: (_) => UsersViewModel()),
       ],
-      child: MaterialApp(
-        title: 'Instagram Clone',
-        debugShowCheckedModeBanner: false,
-        theme: AppThemes.appThemeData['dark'],
-        locale: const Locale('ar', ''),
-        localizationsDelegates: const [
-          AppLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: const [Locale('en', ''), Locale('ar', '')],
-        home: const SplashScreen(),
+      child: ScreentasiaInit(
+        builder: (context, child) => MaterialApp(
+          title: 'Instagram Clone',
+          debugShowCheckedModeBanner: false,
+          theme: AppThemes.appThemeData['dark'],
+          locale: const Locale('ar', ''),
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: const [Locale('en', ''), Locale('ar', '')],
+          home: const SplashScreen(),
+        ),
       ),
     );
   }

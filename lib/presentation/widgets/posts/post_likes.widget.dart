@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:screentasia/screentasia.dart';
 
 import '../../../core/intl/app_localizations.dart';
 
@@ -10,14 +11,14 @@ class PostLikesWidget extends StatelessWidget {
     ThemeData currentTheme = Theme.of(context);
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20.w),
       child: RichText(
         text: TextSpan(
           style: TextStyle(color: currentTheme.colorScheme.onSecondary),
           children: [
             TextSpan(text: '${AppLocalizations.of(context)!.liked_by} '),
             const TextSpan(
-              text: 'nour_alzway',
+              text: 'faisal_faraj',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             TextSpan(text: ' ${AppLocalizations.of(context)!.and}'),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/post/post.model.dart';
 import 'package:flutter_instagram_clone/presentation/screens/profile/profile_posts_list.screen.dart';
+import 'package:screentasia/screentasia.dart';
 
 class PostsGridWidget extends StatelessWidget {
   final List<PostModel> posts;
@@ -9,7 +10,7 @@ class PostsGridWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: EdgeInsets.symmetric(horizontal: 10.w),
       child: GridView.builder(
         primary: false,
         shrinkWrap: true,
@@ -22,7 +23,7 @@ class PostsGridWidget extends StatelessWidget {
         ),
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+            margin: EdgeInsets.symmetric(vertical: 5.h, horizontal: 5.w),
             child: GestureDetector(
               onTap: () {
                 Navigator.push(

@@ -16,7 +16,7 @@ class StoryHeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 0.0, right: 20, left: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         // mainAxisSize: MainAxisSize.min,
         children: [

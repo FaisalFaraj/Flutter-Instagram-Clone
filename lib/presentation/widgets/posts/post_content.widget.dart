@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:screentasia/screentasia.dart';
 
 class PostContentWidget extends StatelessWidget {
   final String media;
@@ -15,18 +16,19 @@ class PostContentWidget extends StatelessWidget {
         // TODO: show like effect
       },
       child: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5),
+        padding:
+            const EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5).r,
         child: Stack(
           children: [
-            const SizedBox(
-              width: 700,
-              height: 370,
+            SizedBox(
+              width: 700.w,
+              height: 370.h,
             ),
             ClipRRect(
-                borderRadius: BorderRadius.circular(35),
+                borderRadius: BorderRadius.circular(35).r,
                 child: SizedBox(
-                  width: 700,
-                  height: 350,
+                  width: 700.w,
+                  height: 350.h,
                   child: Image.network(
                     media,
                     fit: BoxFit.cover,
@@ -37,9 +39,9 @@ class PostContentWidget extends StatelessWidget {
               left: 50,
               right: 50,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(15).r,
                 child: Container(
-                  height: 50,
+                  height: 50.w,
                   color: currentTheme.colorScheme.primary,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -53,27 +55,27 @@ class PostContentWidget extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 SizedBox(
-                                    height: 20,
-                                    width: 20,
+                                    height: 20.h,
+                                    width: 20.w,
                                     child: FaIcon(FontAwesomeIcons.heart,
                                         color: currentTheme
                                             .colorScheme.onPrimary)),
-                                const SizedBox(
-                                  height: 5,
+                                SizedBox(
+                                  height: 5.w,
                                 ),
                                 Text(
                                   '1223434',
                                   maxLines: 1,
                                   style: TextStyle(
-                                      fontSize: 9,
+                                      fontSize: 9.sp,
                                       color:
                                           currentTheme.colorScheme.onPrimary),
                                 )
                               ],
                             ),
                           ),
-                          const SizedBox(
-                            width: 20,
+                          SizedBox(
+                            width: 20.w,
                           ),
                           GestureDetector(
                             onTap: () {},
@@ -82,33 +84,33 @@ class PostContentWidget extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 SizedBox(
-                                  height: 20,
-                                  width: 20,
+                                  height: 20.h,
+                                  width: 20.w,
                                   child: FaIcon(FontAwesomeIcons.comment,
                                       color:
                                           currentTheme.colorScheme.onPrimary),
                                 ),
-                                const SizedBox(
-                                  height: 5,
+                                SizedBox(
+                                  height: 5.h,
                                 ),
                                 Text(
                                   '1223434',
                                   maxLines: 1,
                                   style: TextStyle(
-                                      fontSize: 9,
+                                      fontSize: 9.sp,
                                       color:
                                           currentTheme.colorScheme.onPrimary),
                                 )
                               ],
                             ),
                           ),
-                          const SizedBox(
-                            width: 20,
+                          SizedBox(
+                            width: 20.w,
                           ),
                           GestureDetector(
                             onTap: () {},
                             child: Icon(Icons.more_vert,
-                                size: 30,
+                                size: 30.sp,
                                 color: currentTheme.colorScheme.onPrimary),
                           ),
                         ],

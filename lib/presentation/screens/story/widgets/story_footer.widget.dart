@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:screentasia/screentasia.dart';
 
 import '../../../../core/intl/app_localizations.dart';
 
@@ -14,18 +15,18 @@ class _StoryFooterWidgetState extends State<StoryFooterWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: EdgeInsets.symmetric(horizontal: 10.w),
       child: Row(
         children: [
           Expanded(
             child: Container(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20,
+              padding: EdgeInsets.symmetric(
+                horizontal: 20.w,
                 vertical: 0,
               ),
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.white),
-                borderRadius: BorderRadius.circular(40),
+                borderRadius: BorderRadius.circular(40).r,
               ),
               child: TextFormField(
                 decoration: InputDecoration(
@@ -37,23 +38,23 @@ class _StoryFooterWidgetState extends State<StoryFooterWidget> {
               ),
             ),
           ),
-          const SizedBox(
-            width: 20,
+          SizedBox(
+            width: 20.w,
           ),
           GestureDetector(
             onTap: () {},
             child: SizedBox(
-              width: 22,
+              width: 22.w,
               child: FaIcon(FontAwesomeIcons.heart),
             ),
           ),
-          const SizedBox(
-            width: 20,
+          SizedBox(
+            width: 20.w,
           ),
           GestureDetector(
             onTap: () {},
             child: SizedBox(
-              width: 20,
+              width: 20.w,
               child: FaIcon(FontAwesomeIcons.paperPlane),
             ),
           ),

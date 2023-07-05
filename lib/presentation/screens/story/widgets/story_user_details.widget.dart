@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/user/user.model.dart';
+import 'package:screentasia/screentasia.dart';
 
 class StoryUserDetailsWidget extends StatelessWidget {
   final UserModel userModel;
@@ -10,15 +11,15 @@ class StoryUserDetailsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      padding: EdgeInsets.symmetric(vertical: 10.w),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
               Container(
-                width: 40,
-                height: 40,
+                width: 40.w,
+                height: 40.h,
                 alignment: Alignment.center,
                 clipBehavior: Clip.antiAlias,
                 decoration: const BoxDecoration(
@@ -29,24 +30,24 @@ class StoryUserDetailsWidget extends StatelessWidget {
                   child: Image.network(userModel.profileImage),
                 ),
               ),
-              const SizedBox(
-                width: 10,
+              SizedBox(
+                width: 10.w,
               ),
               Text(
                 userModel.username,
-                style: const TextStyle(
-                  fontSize: 16,
+                style: TextStyle(
+                  fontSize: 16.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(
-                width: 5,
+              SizedBox(
+                width: 5.w,
               ),
-              const Text(
+              Text(
                 '3h',
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 16.sp,
                   color: Colors.white,
                 ),
               ),

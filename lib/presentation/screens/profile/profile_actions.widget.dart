@@ -1,5 +1,6 @@
 // profiles actions =  edit profile or follow and message buttons
 import 'package:flutter/material.dart';
+import 'package:screentasia/screentasia.dart';
 
 import '../../../core/intl/app_localizations.dart';
 
@@ -10,12 +11,9 @@ class ProfileActionsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
-      child: isLoggedUser
-          ? buildActionsForLoggedUser(context)
-          : buildActionsForOtherUsers(context),
-    );
+    return isLoggedUser
+        ? buildActionsForLoggedUser(context)
+        : buildActionsForOtherUsers(context);
   }
 
   Widget buildActionsForOtherUsers(BuildContext context) {
@@ -27,11 +25,11 @@ class ProfileActionsWidget extends StatelessWidget {
             color: Colors.blue,
             textColor: currentTheme.colorScheme.primary,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
+              borderRadius: BorderRadius.circular(10.0).r,
             ),
             elevation: 0,
             minWidth: double.infinity,
-            height: 35,
+            height: 35.h,
             // style: ButtonStyle(minimumSize: Size(double.infinity, 100)),
             onPressed: () {},
             child: Text(
@@ -40,17 +38,17 @@ class ProfileActionsWidget extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(
-          width: 10,
+        SizedBox(
+          width: 10.w,
         ),
         Expanded(
           child: MaterialButton(
             color: const Color.fromARGB(255, 231, 231, 231),
             textColor: currentTheme.colorScheme.onPrimary,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
+              borderRadius: BorderRadius.circular(10.0).r,
             ),
-            height: 35,
+            height: 35.h,
             elevation: 0,
             minWidth: double.infinity,
             // style: ButtonStyle(minimumSize: Size(double.infinity, 100)),
@@ -66,18 +64,27 @@ class ProfileActionsWidget extends StatelessWidget {
   Widget buildActionsForLoggedUser(BuildContext context) {
     ThemeData currentTheme = Theme.of(context);
 
-    return MaterialButton(
-      color: const Color.fromARGB(255, 231, 231, 231),
-      textColor: Colors.black,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0),
+    return TextButton(
+      style: TextButton.styleFrom(
+        padding: EdgeInsets.all(15),
+        backgroundColor: currentTheme.colorScheme.onPrimary,
+        // textColor: Colors.black,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0).r,
+        ),
+
+        elevation: 0,
+        // minWidth: double.infinity,
       ),
-      height: 35,
-      elevation: 0,
-      minWidth: double.infinity,
+
       // style: ButtonStyle(minimumSize: Size(double.infinity, 100)),
       onPressed: () {},
-      child: Text(AppLocalizations.of(context)!.edit_profile),
+      child: Text(
+        AppLocalizations.of(context)!.edit_profile,
+        style: TextStyle(
+          color: currentTheme.colorScheme.primary,
+        ),
+      ),
     );
   }
 }

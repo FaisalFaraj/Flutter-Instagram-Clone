@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instagram_clone/data/models/user/user.model.dart';
+import 'package:screentasia/screentasia.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
   final UserModel userModel;
@@ -66,8 +67,8 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
           icon: ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Container(
-              height: 40,
-              width: 40,
+              height: 40.h,
+              width: 40.w,
               decoration: const BoxDecoration(
                   gradient: LinearGradient(
                 begin: Alignment.topRight,
@@ -78,7 +79,7 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
                 child: Icon(
                   Icons.add_outlined,
                   color: Colors.white,
-                  size: 20,
+                  // size: 20.sp,
                 ),
               ),
             ),
@@ -97,13 +98,13 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
         BottomNavigationBarItem(
             label: '',
             icon: Container(
-              padding: const EdgeInsets.all(2),
+              padding: EdgeInsets.all(2).r,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(15).r,
                 clipBehavior: Clip.antiAlias,
                 child: SizedBox(
-                  width: 30,
-                  height: 30,
+                  width: 30.w,
+                  height: 30.h,
                   child: Image.network(
                     widget.userModel.profileImage,
                   ),
@@ -111,17 +112,17 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
               ),
             ),
             activeIcon: Container(
-              padding: const EdgeInsets.all(1),
+              padding: EdgeInsets.all(1).r,
               decoration: BoxDecoration(
-                border: Border.all(width: 1),
-                borderRadius: BorderRadius.circular(15),
+                border: Border.all(width: 1.w),
+                borderRadius: BorderRadius.circular(15).r,
               ),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(15).r,
                 clipBehavior: Clip.antiAlias,
                 child: SizedBox(
-                  width: 30,
-                  height: 30,
+                  width: 30.w,
+                  height: 30.h,
                   child: Image.network(
                     widget.userModel.profileImage,
                   ),

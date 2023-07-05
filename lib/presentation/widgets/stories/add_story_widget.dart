@@ -1,5 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:screentasia/screentasia.dart';
 
 import '../../../core/intl/app_localizations.dart';
 
@@ -11,7 +12,7 @@ class AddStoryWidget extends StatelessWidget {
     ThemeData currentTheme = Theme.of(context);
 
     return Padding(
-      padding: const EdgeInsetsDirectional.only(start: 8),
+      padding: EdgeInsetsDirectional.only(start: 8),
       child: Stack(
         children: [
           Container(
@@ -38,11 +39,11 @@ class AddStoryWidget extends StatelessWidget {
           Align(
             alignment: AlignmentDirectional.topCenter,
             child: Padding(
-              padding: const EdgeInsetsDirectional.only(top: 20, start: 15),
+              padding: EdgeInsetsDirectional.only(top: 20, start: 15),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(15),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.only(start: 1.5),
+                  padding: EdgeInsetsDirectional.only(start: 1.5),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -53,7 +54,7 @@ class AddStoryWidget extends StatelessWidget {
                           5,
                           5,
                         ],
-                        child: const SizedBox(
+                        child: SizedBox(
                             height: 25,
                             width: 30,
                             child: Center(
@@ -63,7 +64,7 @@ class AddStoryWidget extends StatelessWidget {
                               ),
                             )),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 10,
                       ),
                       SizedBox(
@@ -71,7 +72,7 @@ class AddStoryWidget extends StatelessWidget {
                         width: 55,
                         child: Text(
                           AppLocalizations.of(context)!.post_your_story,
-                          style: const TextStyle(fontSize: 12, color: Colors.grey),
+                          style: TextStyle(fontSize: 12, color: Colors.grey),
                         ),
                       )
                     ],
